@@ -1,5 +1,13 @@
 # Modelling Network Assets - Classes & Objects
 
+#
+# Core Topic: Classes and Objects
+# A class is a blueprint for creating objects. Think of a class like
+# the schematic for a networking device. The class defines what properties (attributes)
+# and actions (methods) all devices of that type will have. An object is a specific
+# instance of that class—an actual firewall or router created from the schematic
+#
+
 class NetworkDevice:
     # Class Attribute : Shared by all instances
     OS_TYPE = 'Linux'

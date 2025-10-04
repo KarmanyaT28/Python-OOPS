@@ -1,3 +1,23 @@
+# Core Topic: Encapsulation (Beginner Level)
+# Encapsulation is the concept of bundling data (attributes) and the methods (functions)
+# that operate on that data into a single unit (the class).
+# It also includes controlling access to the data.
+#
+# In Python, we achieve a soft form of access control using naming conventions:
+#
+# Public Attributes: Accessible directly from outside the class (e.g., self.ip_address).
+# You can and should change these if needed.
+#
+# Protected Attributes: Indicated by a single leading underscore (e.g., _config).
+# This is a convention, signaling to other programmers that these attributes shouldn('t be accessed directly, '
+# though Python doesn')t strictly prevent it.
+#
+# Private Attributes: Indicated by two leading underscores (e.g., __secret_key).
+# Python performs name mangling on these, making them harder to access from outside,
+# enforcing a stricter level of privacy.
+
+
+
 class UserAccount:
     def __init__(self, username, password_hash):
         self.username = username             # Public
