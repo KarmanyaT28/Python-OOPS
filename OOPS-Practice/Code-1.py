@@ -47,8 +47,8 @@ my_account.withdraw(50)
 try:
     print(f"Attempting to read balance directly: {my_account.__balance}")
 except AttributeError as e:
-    print(f"🚫 Direct read failed (Encapsulation): {e}")
+    print(f" Direct read failed (Encapsulation): {e}")
 
 # 5. Using the safe getter method
 current_balance = my_account.get_balance()
-print(f"✅ Balance read via getter method: ${current_balance}")
+print(f" Balance read via getter method: ${current_balance}")
