@@ -8,5 +8,5 @@ def intr(amt, *, rate):
 
 
 interest = intr(1000, rate=10)
-interest = intr(1000, 10)
+# interest = intr(1000, 10)
 print(interest)
