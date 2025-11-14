@@ -1,0 +1,13 @@
+from string import Template
+
+# Defining template string
+str = "Hello and Welcome to $name !"
+
+
+# Creating Template object
+
+templateObj = Template(str)
+
+
+new_str = templateObj.substitute(name="TutorialsPoint")
+print(new_str)
