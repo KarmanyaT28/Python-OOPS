@@ -1,0 +1,1 @@
+# Python program to store all even numbers from an array in another array:

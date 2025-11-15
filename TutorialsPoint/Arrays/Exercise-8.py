@@ -1,0 +1,1 @@
+# Python program to store the Unicode value of each character in the given array.
