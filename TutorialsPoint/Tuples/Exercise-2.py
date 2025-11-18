@@ -1,0 +1,1 @@
+# Python program to find sum of all numbers in a tuple −
