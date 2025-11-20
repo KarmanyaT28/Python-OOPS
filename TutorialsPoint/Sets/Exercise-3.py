@@ -1,0 +1,1 @@
+# Python program to obtain a list of unique elements in a list
