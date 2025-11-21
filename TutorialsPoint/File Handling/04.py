@@ -50,3 +50,55 @@ with open('test.bin', 'wb') as file:
     # Binary Data
     data = b"Hello, World!"
     file.write(data)
+
+
+# Converting Text Strings to Bytes
+
+# Open a file in binary write mode
+
+with open('test.bin', 'wb') as f:
+    # Convert text string to bytes
+    data = "Hello, World!".encode('utf-8')
+    f.write(data)
+
+
+# Writing to an Existing File
+# Open a file in append mode
+fo = open("foo.txt","a")
+text = "Tutorials Point has python tutorial"
+
+fo.write(text)
+
+fo.close()
+
+
+
+'''
+The following program demonstrates how to open a file in 
+read-write mode ('w+'), write some data, seek a specific 
+position, and then overwrite part of the file's content 
+'''
+
+
+
+# open a file in read-write mode
+fo = open("foo.txt","w+")
+
+# write initial data to the file
+fo.write("This is a rat race")
+
+# Move the read/write pointer to the 10th byte
+fo.seek(10,0)
+
+# Read 3 bytes from the current position
+data = fo.read(3)
+
+# Move the read/write pointer back to the 10th byte
+fo.seek(10,0)
+
+# Overwrite the existing content with new text
+fo.write('cat')
+
+# Close the file
+fo.close()
+
